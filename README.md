@@ -35,7 +35,7 @@ This website was coded using the Acceptance Criteria mentioned below:
 
 
 ### **Deployed website link using Heroku:**
-https://
+https://protected-inlet-22938.herokuapp.com/
 
 
 ### **Credits:**
