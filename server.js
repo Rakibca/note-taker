@@ -31,7 +31,7 @@ app.get('/api/notes', function(req, res) {
 });
 
 
-///////////////////////////////
+
 // receives a new note to save on the request body, add it to the db.json file,
 // and then return the new note to the client.
 //const notesDatabase = require('./db/db.json');
