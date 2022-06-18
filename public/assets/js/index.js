@@ -43,7 +43,6 @@ const saveNote = (note) =>
   });
 
 const deleteNote = (id) => {
-    console.log(id);  
     return fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
@@ -78,8 +77,8 @@ const handleNoteSave = () => {
         getAndRenderNotes();
         renderActiveNote();
       })
-      .catch((err) => {
-        console.log(err);
+      .catch((e) => {
+        console.log(error);
   });
 };
 
@@ -89,9 +88,8 @@ const handleNoteDelete = (e) => {
   e.stopPropagation();
 
   const note = e.target;
-  console.log(note);
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
-  console.log(noteId);
+
   if (activeNote.id === noteId) {
     activeNote = {};
   }
@@ -101,8 +99,8 @@ const handleNoteDelete = (e) => {
         getAndRenderNotes();
         renderActiveNote();
       })
-      .catch((err) => {
-        console.log(err);
+      .catch((e) => {
+        console.log(error);
   });
 };
 
